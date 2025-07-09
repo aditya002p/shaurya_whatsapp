@@ -54,18 +54,6 @@ fastag_whatsApp_bot/
    pip install -r requirements.txt
    ```
 
-3. **Set up environment variables**:
-   Create a `.env` file with the following variables:
-   ```env
-   SHAURYAPAY_API_KEY=your_shauryapay_api_key
-   WHATSAPP_API_URL=your_whatsapp_api_url
-   WHATSAPP_ACCESS_TOKEN=your_whatsapp_access_token
-   WHATSAPP_PHONE_NUMBER_ID=your_whatsapp_phone_number_id
-   DATABASE_URL=sqlite:///./fastag_bot.db
-   DEBUG=False
-   SECRET_KEY=your_secret_key_here
-   ```
-
 4. **Initialize the database**:
    ```bash
    python -c "from models import *; from sqlalchemy import create_engine; engine = create_engine('sqlite:///./fastag_bot.db'); Base.metadata.create_all(engine)"
